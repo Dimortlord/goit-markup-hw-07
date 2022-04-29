@@ -1,2 +1,22 @@
-@import './components/header.scss';
-@import './components/hero.scss';
+/*___________________Utils_____________________________*/
+
+@import './utils/vars';
+
+/*___________________BASE_____________________________*/
+
+@import './base/base';
+@import './base/reset';
+
+/* __________________ COMPONENTS ____________________*/
+
+@import './components/header';
+@import './components/hero';
+@import './components/features';
+@import './components/our-work';
+@import './components/team';
+@import './components/clients';
+@import './components/footer';
+
+/* __________________ Visually-Hidden ____________________*/
+
+@import './vendors/visually-hidden.scss';
