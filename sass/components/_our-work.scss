@@ -21,6 +21,10 @@
 .our-work__item {
   position: relative;
   margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .our-work__label {
@@ -38,8 +42,4 @@
   color: var(--primary-backgroung-color);
   background-color: rgba(47, 48, 58, 0.8);
   text-transform: uppercase;
-}
-
-.our-work__item:last-child {
-  margin-right: 0;
 }
