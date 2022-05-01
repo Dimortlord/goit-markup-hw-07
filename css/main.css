@@ -11,10 +11,23 @@
   --secondary-logo-color: #000000;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /*___________________BASE_____________________________*/
 body {
   background-color: #ffffff;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -151,6 +164,10 @@ img {
   height: 4px;
   border-radius: 2px;
   background-color: #188ce8;
+}
+
+.site-nav_current .site-nav__link {
+  color: var(--accent-color);
 }
 
 .site-nav__link {
@@ -1001,19 +1018,5 @@ img {
   font-size: 16px;
   line-height: 1, 87;
   letter-spacing: 0.03em;
-}
-
-/* __________________ Visually-Hidden ____________________*/
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 /*# sourceMappingURL=main.css.map */

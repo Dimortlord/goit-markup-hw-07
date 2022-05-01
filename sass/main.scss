@@ -1,9 +1,9 @@
 /*___________________Utils_____________________________*/
 
 @import './utils/vars';
+@import './utils/vision-block.scss';
 
 /*___________________BASE_____________________________*/
-
 @import './base/base';
 @import './base/reset';
 @import './base/animations';
@@ -18,7 +18,3 @@
 @import './components/clients';
 @import './components/footer';
 @import './components/portfolio-information';
-
-/* __________________ Visually-Hidden ____________________*/
-
-@import './vendors/visually-hidden';
