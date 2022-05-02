@@ -1,4 +1,6 @@
 .menu-button {
+  position: relative;
+  z-index: 100;
   width: 40px;
   height: 40px;
   padding: 0;
@@ -20,25 +22,41 @@
   opacity: 1;
 }
 
+.menu-button.is-open .menu-icon-open {
+  opacity: 0;
+}
+
+.menu-button.is-open .menu-icon-open {
+  opacity: 1;
+}
+
 .menu-icon-close {
   opacity: 0;
 }
 
 .menu {
   position: fixed;
+
   display: block;
   flex-direction: column;
+
   top: 0;
   left: 0;
   padding: 40px;
   padding-top: 118px;
   width: 100vw;
   height: 100vh;
+  transform: translateX(100%);
+  transition: 400ms;
 
   background-color: #ffffff;
 
   @media screen and (min-width: 768px) {
     display: none;
+  }
+
+  &.is-open {
+    transform: translateX(0);
   }
 }
 
