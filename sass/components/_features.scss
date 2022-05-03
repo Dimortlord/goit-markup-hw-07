@@ -5,6 +5,16 @@
 
 .features__list {
   display: flex;
+
+  @media screen and (min-width: 480px) {
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .features__item {
@@ -13,6 +23,17 @@
 
   &:last-child {
     margin-right: 0;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
   }
 }
 
@@ -26,6 +47,16 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  @media screen and (min-width: 480px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .features-list__text {
@@ -44,6 +75,17 @@
   height: 120px;
   justify-content: center;
   align-items: center;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 120px;
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .features-box__icon {

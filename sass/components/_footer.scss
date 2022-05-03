@@ -5,15 +5,46 @@
   padding-bottom: 60px;
 
   background: var(--tertriary-background-color);
+
+  // @media screen and (min-width: 480px) {
+  //   display: block;
+  // }
+
+  // @media screen and (min-width: 768px) {
+  // }
+
+  // @media screen and (min-width: 1200px) {
+  // }
 }
 
 .footer-main {
   display: flex;
   align-items: baseline;
+
+  @media screen and (min-width: 480px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .footer-logo {
   margin-right: 70px;
+
+  @media screen and (min-width: 480px) {
+    margin-right: 0px;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .footer-logo__link {
@@ -27,6 +58,35 @@
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
+}
+
+.footer-adress__list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  @media screen and (min-width: 480px) {
+    align-items: center;
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .footer-logo__white {
@@ -36,6 +96,20 @@
 
 .footer-adress__item {
   margin-bottom: 9px;
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 8px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .footer-adress__maps {
@@ -50,6 +124,15 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 480px) {
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
   }
 }
 
@@ -66,6 +149,15 @@
   &:focus {
     color: var(--accent-color);
   }
+
+  @media screen and (min-width: 480px) {
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .footer-adress__number {
@@ -81,10 +173,34 @@
   &:focus {
     color: var(--accent-color);
   }
+
+  @media screen and (min-width: 480px) {
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .footer-icons {
   margin-right: 93px;
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0px;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .footer-icons__invite {
@@ -138,10 +254,35 @@
   line-height: 1.14;
   color: var(--primary-backgroung-color);
   margin-bottom: 20px;
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .footer-form__label {
   display: flex;
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .footer-form__input {
@@ -155,6 +296,17 @@
   outline: transparent;
   color: var(--primary-backgroung-color);
   padding-left: 16px;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .footer-form__btn {
@@ -173,6 +325,15 @@
   border-radius: 4px;
   color: rgba(255, 255, 255, 1);
   /* margin-right: 10px; */
+
+  @media screen and (min-width: 480px) {
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .footer-form__icon {
