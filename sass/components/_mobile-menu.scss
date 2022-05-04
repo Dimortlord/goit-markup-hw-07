@@ -22,15 +22,15 @@
   opacity: 1;
 }
 
-.menu-button.is-open .menu-icon-open {
+.menu-icon-close {
   opacity: 0;
 }
 
-.menu-button.is-open .menu-icon-open {
+.menu-button.is-open .menu-icon-close {
   opacity: 1;
 }
 
-.menu-icon-close {
+.menu-button.is-open .menu-icon-open {
   opacity: 0;
 }
 
@@ -44,7 +44,7 @@
   top: 0;
   left: 0;
   padding: 40px;
-  padding-top: 118px;
+  padding-top: 48px;
   width: 100vw;
   height: 100vh;
   transform: translateX(100%);
