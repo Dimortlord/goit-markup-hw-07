@@ -27,8 +27,11 @@
 }
 
 .features__item {
-  width: 450px;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
 
   @media screen and (min-width: 768px) {
     width: 354px;
@@ -75,8 +78,11 @@
   align-items: center;
   margin-bottom: 30px;
   background-color: #f5f4fa;
-  width: 450px;
-  height: 120px;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 120px;
+  }
 
   @media screen and (min-width: 768px) {
     width: 354px;

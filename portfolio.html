@@ -51,18 +51,18 @@
         </ul>
         <button class="menu-button" data-menu-button aria-expanded="false">
           <svg class="menu-icon" width="40" height="40">
-            <use class="menu-icon-open" href="./image/icons/icons.svg#icon-menu"></use>
-            <use class="menu-icon-close" href="./image/icons/icons.svg#icon-close"></use>
+            <use class="menu-icon-open" href="./image/icons/icons.svg#icon-burger"></use>
+            <use class="menu-icon-close" href="./image/icons/icons.svg#icon-krest"></use>
           </svg>
         </button>
-        <div class="menu is-open" data-menu>
+        <div class="menu" data-menu>
           <nav class="menu-nav">
             <ul class="menu-nav-list">
-              <li class="menu-nav__item menu_current">
+              <li class="menu-nav__item">
                 <a href="index.html" class="menu-nav__link">Студия</a>
               </li>
               <li class="menu-nav__item">
-                <a href="portfolio.html" class="menu-nav__link">Портфолио</a>
+                <a href="portfolio.html" class="menu-nav__link menu_current">Портфолио</a>
               </li>
               <li class="menu-nav__item"><a href="#" class="menu-nav__link">Контакты</a></li>
             </ul>
@@ -118,7 +118,44 @@
             <li class="information-cards__item">
               <a class="information-cards__link" href="_blank">
                 <div class="information-cards__portfolio">
-                  <img class="information-cards__img" src="./image/notebook.jpg" width="370" />
+                  <picture>
+                    <!-- Desktop pictures -->
+                    <source
+                      srcset="
+                        ./image/desktop/portfolio1-lg.jpg    1x,
+                        ./image/desktop/portfolio1-lg@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+                    <!-- Tablet pictures -->
+                    <source
+                      srcset="
+                        ./image/tablet/portfolio1-md.jpg    1x,
+                        ./image/tablet/portfolio1-md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+                    <!-- Mobile pictures -->
+                    <source
+                      srcset="
+                        ./image/mobile/portfolio1-sm.jpg    1x,
+                        ./image/mobile/portfolio1-sm@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+                    <!-- Default picture -->
+                    <img
+                      class="portfolio-img"
+                      src="./image/mobile/portfolio1-sm.jpg"
+                      alt="notebook"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="information-cards__label">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -139,7 +176,44 @@
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
                     или частном лице.
                   </p>
-                  <img class="information-cards__img" src="./image/basketball.jpg" width="370" />
+                  <picture>
+                    <!-- Desktop pictures -->
+                    <source
+                      srcset="
+                        ./image/desktop/portfolio2-lg.jpg    1x,
+                        ./image/desktop/portfolio2-lg@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+                    <!-- Tablet pictures -->
+                    <source
+                      srcset="
+                        ./image/tablet/portfolio2-md.jpg    1x,
+                        ./image/tablet/portfolio2-md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+                    <!-- Mobile pictures -->
+                    <source
+                      srcset="
+                        ./image/mobile/portfolio2-sm.jpg    1x,
+                        ./image/mobile/portfolio2-sm@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+                    <!-- Default picture -->
+                    <img
+                      class="portfolio-img"
+                      src="./image/mobile/portfolio2-sm.jpg"
+                      alt="notebook"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
                 <div class="information-cards__icon">
                   <h3 class="information-cards__type">Постер New Orlean vs Golden Star</h3>
@@ -155,7 +229,44 @@
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
                     или частном лице.
                   </p>
-                  <img class="information-cards__img" src="./image/shark.jpg" width="370" />
+                  <picture>
+                    <!-- Desktop pictures -->
+                    <source
+                      srcset="
+                        ./image/desktop/portfolio3-lg.jpg    1x,
+                        ./image/desktop/portfolio3-lg@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+                    <!-- Tablet pictures -->
+                    <source
+                      srcset="
+                        ./image/tablet/portfolio3-md.jpg    1x,
+                        ./image/tablet/portfolio3-md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+                    <!-- Mobile pictures -->
+                    <source
+                      srcset="
+                        ./image/mobile/portfolio3-sm.jpg    1x,
+                        ./image/mobile/portfolio3-sm@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+                    <!-- Default picture -->
+                    <img
+                      class="portfolio-img"
+                      src="./image/mobile/portfolio3-sm.jpg"
+                      alt="notebook"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
                 <div class="information-cards__icon">
                   <h3 class="information-cards__type">Ресторан Seafood</h3>
@@ -171,7 +282,44 @@
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
                     или частном лице.
                   </p>
-                  <img class="information-cards__img" src="./image/pods.jpg" width="370" />
+                  <picture>
+                    <!-- Desktop pictures -->
+                    <source
+                      srcset="
+                        ./image/desktop/portfolio4-lg.jpg    1x,
+                        ./image/desktop/portfolio4-lg@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+                    <!-- Tablet pictures -->
+                    <source
+                      srcset="
+                        ./image/tablet/portfolio4-md.jpg    1x,
+                        ./image/tablet/portfolio4-md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+                    <!-- Mobile pictures -->
+                    <source
+                      srcset="
+                        ./image/mobile/portfolio4-sm.jpg    1x,
+                        ./image/mobile/portfolio4-sm@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+                    <!-- Default picture -->
+                    <img
+                      class="portfolio-img"
+                      src="./image/mobile/portfolio4-sm.jpg"
+                      alt="notebook"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
                 <div class="information-cards__icon">
                   <h3 class="information-cards__type">Проект Prime</h3>
@@ -187,7 +335,44 @@
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
                     или частном лице.
                   </p>
-                  <img class="information-cards__img" src="./image/box.jpg" width="370" />
+                  <picture>
+                    <!-- Desktop pictures -->
+                    <source
+                      srcset="
+                        ./image/desktop/portfolio5-lg.jpg    1x,
+                        ./image/desktop/portfolio5-lg@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+                    <!-- Tablet pictures -->
+                    <source
+                      srcset="
+                        ./image/tablet/portfolio5-md.jpg    1x,
+                        ./image/tablet/portfolio5-md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+                    <!-- Mobile pictures -->
+                    <source
+                      srcset="
+                        ./image/mobile/portfolio5-sm.jpg    1x,
+                        ./image/mobile/portfolio5-sm@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+                    <!-- Default picture -->
+                    <img
+                      class="portfolio-img"
+                      src="./image/mobile/portfolio5-sm.jpg"
+                      alt="notebook"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
                 <div class="information-cards__icon">
                   <h3 class="information-cards__type">Проект Boxes</h3>
@@ -203,7 +388,44 @@
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
                     или частном лице.
                   </p>
-                  <img class="information-cards__img" src="./image/monitor.jpg" width="370" />
+                  <picture>
+                    <!-- Desktop pictures -->
+                    <source
+                      srcset="
+                        ./image/desktop/portfolio6-lg.jpg    1x,
+                        ./image/desktop/portfolio6-lg@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+                    <!-- Tablet pictures -->
+                    <source
+                      srcset="
+                        ./image/tablet/portfolio6-md.jpg    1x,
+                        ./image/tablet/portfolio6-md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+                    <!-- Mobile pictures -->
+                    <source
+                      srcset="
+                        ./image/mobile/portfolio6-sm.jpg    1x,
+                        ./image/mobile/portfolio6-sm@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+                    <!-- Default picture -->
+                    <img
+                      class="portfolio-img"
+                      src="./image/mobile/portfolio6-sm.jpg"
+                      alt="notebook"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
                 <div class="information-cards__icon">
                   <h3 class="information-cards__type">Inspiration has no Borders</h3>
@@ -219,7 +441,44 @@
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
                     или частном лице.
                   </p>
-                  <img class="information-cards__img" src="./image/book.jpg" width="370" />
+                  <picture>
+                    <!-- Desktop pictures -->
+                    <source
+                      srcset="
+                        ./image/desktop/portfolio7-lg.jpg    1x,
+                        ./image/desktop/portfolio7-lg@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+                    <!-- Tablet pictures -->
+                    <source
+                      srcset="
+                        ./image/tablet/portfolio7-md.jpg    1x,
+                        ./image/tablet/portfolio7-md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+                    <!-- Mobile pictures -->
+                    <source
+                      srcset="
+                        ./image/mobile/portfolio7-sm.jpg    1x,
+                        ./image/mobile/portfolio7-sm@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+                    <!-- Default picture -->
+                    <img
+                      class="portfolio-img"
+                      src="./image/mobile/portfolio7-sm.jpg"
+                      alt="notebook"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
                 <div class="information-cards__icon">
                   <h3 class="information-cards__type">Издание Limited Edition</h3>
@@ -235,7 +494,44 @@
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
                     или частном лице.
                   </p>
-                  <img class="information-cards__img" src="./image/tag.jpg" width="370" />
+                  <picture>
+                    <!-- Desktop pictures -->
+                    <source
+                      srcset="
+                        ./image/desktop/portfolio8-lg.jpg    1x,
+                        ./image/desktop/portfolio8-lg@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+                    <!-- Tablet pictures -->
+                    <source
+                      srcset="
+                        ./image/tablet/portfolio8-md.jpg    1x,
+                        ./image/tablet/portfolio8-md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+                    <!-- Mobile pictures -->
+                    <source
+                      srcset="
+                        ./image/mobile/portfolio8-sm.jpg    1x,
+                        ./image/mobile/portfolio8-sm@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+                    <!-- Default picture -->
+                    <img
+                      class="portfolio-img"
+                      src="./image/mobile/portfolio8-sm.jpg"
+                      alt="notebook"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
                 <div class="information-cards__icon">
                   <h3 class="information-cards__type">Проект LAB</h3>
@@ -251,7 +547,44 @@
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
                     или частном лице.
                   </p>
-                  <img class="information-cards__img" src="./image/notebook2.jpg" width="370" />
+                  <picture>
+                    <!-- Desktop pictures -->
+                    <source
+                      srcset="
+                        ./image/desktop/portfolio9-lg.jpg    1x,
+                        ./image/desktop/portfolio9-lg@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+                    <!-- Tablet pictures -->
+                    <source
+                      srcset="
+                        ./image/tablet/portfolio9-md.jpg    1x,
+                        ./image/tablet/portfolio9-md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+                    <!-- Mobile pictures -->
+                    <source
+                      srcset="
+                        ./image/mobile/portfolio9-sm.jpg    1x,
+                        ./image/mobile/portfolio9-sm@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+                    <!-- Default picture -->
+                    <img
+                      class="portfolio-img"
+                      src="./image/mobile/portfolio9-sm.jpg"
+                      alt="notebook"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
                 <div class="information-cards__icon">
                   <h3 class="information-cards__type">Growing Business</h3>
