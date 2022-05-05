@@ -86,7 +86,18 @@
   }
 
   @media screen and (min-width: 768px) {
+    margin: -15px;
     // gap: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
+}
+
+.information-cards__link {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
   }
 
   @media screen and (min-width: 1200px) {
@@ -99,6 +110,8 @@
   margin-bottom: 30px;
 
   @media screen and (min-width: 768px) {
+    margin: 15px;
+    display: flex;
     width: 354px;
     height: 440px;
     // gap: 30px;
@@ -157,6 +170,7 @@
   border-left: 1px solid #eeeeee;
 
   @media screen and (min-width: 768px) {
+    flex-grow: 1;
   }
 
   @media screen and (min-width: 1200px) {

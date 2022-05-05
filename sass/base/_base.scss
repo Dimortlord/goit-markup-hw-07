@@ -3,6 +3,10 @@ body {
   font-family: $roboto;
 }
 
+.no-scroll {
+  overflow-y: hidden;
+}
+
 .container {
   width: 480px;
   padding: 0 15px;

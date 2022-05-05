@@ -22,16 +22,16 @@
   opacity: 1;
 }
 
+.menu-button.is-open .menu-icon-open {
+  opacity: 0;
+}
+
 .menu-icon-close {
   opacity: 0;
 }
 
 .menu-button.is-open .menu-icon-close {
   opacity: 1;
-}
-
-.menu-button.is-open .menu-icon-open {
-  opacity: 0;
 }
 
 .menu {
